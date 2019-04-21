@@ -1,0 +1,26 @@
+# depslib dependency file v1.0
+1555800945 source:c:\users\herby\desktop\repos\lhkey4\interception\samples\arpg\main.cpp
+	"interception.h"
+	<time.h>
+	<iostream>
+	<deque>
+	<climits>
+	<chrono>
+	<thread>
+
+1555284683 c:\users\herby\desktop\repos\lhkey4\interception\samples\arpg\interception.h
+
+1555814318 source:c:\users\herby\desktop\repos\nimblemouse\arpg\main.cpp
+	"interception.h"
+	<windows.h>
+	<fstream>
+	<string>
+	<time.h>
+	<iostream>
+	<deque>
+	<climits>
+	<chrono>
+	<thread>
+
+1555284683 c:\users\herby\desktop\repos\nimblemouse\arpg\interception.h
+
