@@ -35,8 +35,8 @@
 		</Compiler>
 		<Linker>
 			<Add option="-static -static-libgcc -static-libstdc++" />
-			<Add library="../InterceptionDLL2/InterceptionDLL2/Debug/Interception.lib" />
-			<Add directory="../InterceptionDLL2/InterceptionDLL2/Debug" />
+			<Add library="Interception.lib" />
+			<Add directory="../ARPG" />
 		</Linker>
 		<Unit filename="main.cpp" />
 		<Extensions>

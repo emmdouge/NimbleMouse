@@ -120,13 +120,13 @@ InterceptionKeyStroke buttonC_down = space_down;
 
 
 const double xReqSpeedDef = 3;
-const double yReqSpeedDef = 3;
+const double yReqSpeedDef = 1;
 
 double xReqSpeed = xReqSpeedDef;
 double yReqSpeed = yReqSpeedDef;
 
 const int xHitMaxDef = 12;
-const int yHitMaxDef = 12;
+const int yHitMaxDef = 6;
 const int rollMaxDef = 3;
 
 int xHitMax = xHitMaxDef;
@@ -145,11 +145,11 @@ bool mouseX(double dist, deque<double> * distX_sequence, deque<double> * mouseMo
         {
             if(dist < -1*xReqSpeed)
             {
-                xHitCounter = -1*(int)xHitMaxDef*0.25;
+                xHitCounter = (int)xHitMaxDef*0.25;
             }
             else
             {
-                xHitCounter = -1*(int)xHitMaxDef*0.20;
+                xHitCounter = (int)xHitMaxDef*0.43;
             }
             mouseMoveX_sequence->pop_front();
             mouseMoveX_sequence->push_back(dist);
@@ -178,12 +178,12 @@ bool mouseY(double dist, deque<double> * distY_sequence, deque<double> * mouseMo
             //up
             if(dist < -1*yReqSpeed)
             {
-                yHitCounter = (int)yHitMaxDef*0.44;
+                yHitCounter = (-1)*(int)yHitMaxDef*1.5;
             }
             //down
             else
             {
-                yHitCounter = (int)yHitMaxDef*0.22;
+                yHitCounter = (-1)*(int)yHitMaxDef*2;
             }
             //yHitMax = yHitMaxMod;
             xHitMax = xHitMaxDef;
